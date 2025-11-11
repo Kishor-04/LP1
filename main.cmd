@@ -4,10 +4,10 @@ color 0a
 
 :MENU
 echo -----------------------------------
-echo        ⚙️  Command Menu
+echo        Command Menu
 echo -----------------------------------
 echo 1. Show current directory
-echo 2. List all files
+echo 2. Download BullyAlgorithm.java
 echo 3. Show system info
 echo 4. Exit
 echo -----------------------------------
@@ -32,8 +32,13 @@ cls
 goto MENU
 
 :CASE2
-echo You selected: List all files
-curl -o BullyAlgorithm.java https://tinyurl.com/mitch-john/ass4/bully/BullyAlgorithm.java
+echo You selected: Download BullyAlgorithm.java
+curl -L -o BullyAlgorithm.java https://tinyurl.com/mitch-john/ass4/bully/BullyAlgorithm.java
+if exist BullyAlgorithm.java (
+    echo File downloaded successfully!
+) else (
+    echo Failed to download file.
+)
 pause
 cls
 goto MENU
@@ -49,4 +54,3 @@ goto MENU
 echo Exiting... Goodbye!
 timeout /t 2 >nul
 exit
-
