@@ -12,7 +12,7 @@ echo.
 echo [1] Assignment 1 - RMI (All 4 Files)
 echo [2] Assignment 3 - MPI (1 File)
 echo [3] Assignment 4 - Berkeley_Bully_Ring (All 4 Files)
-echo [4] Assignment 5 - WebService (1 File)
+echo [4] Assignment 5 - WebService (All 2 Files)
 echo.
 echo [5] Download ALL Assignments
 echo [0] Exit
@@ -35,17 +35,17 @@ echo Downloading Assignment 1 - RMI Files...
 echo ========================================
 if not exist "Assign1_RMI" mkdir Assign1_RMI
 echo.
-echo [1/4] Downloading Search.java...
-curl -L -o "Assign1_RMI\Search.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/Search.java" && echo [SUCCESS] Search.java downloaded!
+echo [1/4] Downloading ArithmeticClient.java...
+curl -L -o "Assign1_RMI\ArithmeticClient.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticClient.java" && echo [SUCCESS] ArithmeticClient.java downloaded!
 echo.
-echo [2/4] Downloading SearchClient.java...
-curl -L -o "Assign1_RMI\SearchClient.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/SearchClient.java" && echo [SUCCESS] SearchClient.java downloaded!
+echo [2/4] Downloading ArithmeticImplementation.java...
+curl -L -o "Assign1_RMI\ArithmeticImplementation.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticImplementation.java" && echo [SUCCESS] ArithmeticImplementation.java downloaded!
 echo.
-echo [3/4] Downloading SearchQuery.java...
-curl -L -o "Assign1_RMI\SearchQuery.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/SearchQuery.java" && echo [SUCCESS] SearchQuery.java downloaded!
+echo [3/4] Downloading ArithmeticInterface.java...
+curl -L -o "Assign1_RMI\ArithmeticInterface.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticInterface.java" && echo [SUCCESS] ArithmeticInterface.java downloaded!
 echo.
-echo [4/4] Downloading SearchServer.java...
-curl -L -o "Assign1_RMI\SearchServer.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/SearchServer.java" && echo [SUCCESS] SearchServer.java downloaded!
+echo [4/4] Downloading ArithmeticServer.java...
+curl -L -o "Assign1_RMI\ArithmeticServer.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticServer.java" && echo [SUCCESS] ArithmeticServer.java downloaded!
 echo.
 echo ========================================
 echo Assignment 1 - All Files Downloaded Successfully!
@@ -99,8 +99,11 @@ echo Downloading Assignment 5 - WebService Files...
 echo ========================================
 if not exist "Assign5_WebService" mkdir Assign5_WebService
 echo.
-echo [1/1] Downloading server.js...
-curl -L -o "Assign5_WebService\server.js" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign5_WebService/server.js" && echo [SUCCESS] server.js downloaded!
+echo [1/2] Downloading Client.java...
+curl -L -o "Assign5_WebService\Client.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign5_WebService/Client.java" && echo [SUCCESS] Client.java downloaded!
+echo.
+echo [2/2] Downloading Server.java...
+curl -L -o "Assign5_WebService\Server.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign5_WebService/Server.java" && echo [SUCCESS] Server.java downloaded!
 echo.
 echo ========================================
 echo Assignment 5 - All Files Downloaded Successfully!
@@ -124,10 +127,10 @@ if not exist "Assign5_WebService" mkdir Assign5_WebService
 echo ----------------------------------------
 echo Downloading Assignment 1 Files (4 files)...
 echo ----------------------------------------
-curl -L -o "Assign1_RMI\Search.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/Search.java" && echo [SUCCESS] Search.java
-curl -L -o "Assign1_RMI\SearchClient.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/SearchClient.java" && echo [SUCCESS] SearchClient.java
-curl -L -o "Assign1_RMI\SearchQuery.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/SearchQuery.java" && echo [SUCCESS] SearchQuery.java
-curl -L -o "Assign1_RMI\SearchServer.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/SearchServer.java" && echo [SUCCESS] SearchServer.java
+curl -L -o "Assign1_RMI\ArithmeticClient.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticClient.java" && echo [SUCCESS] ArithmeticClient.java
+curl -L -o "Assign1_RMI\ArithmeticImplementation.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticImplementation.java" && echo [SUCCESS] ArithmeticImplementation.java
+curl -L -o "Assign1_RMI\ArithmeticInterface.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticInterface.java" && echo [SUCCESS] ArithmeticInterface.java
+curl -L -o "Assign1_RMI\ArithmeticServer.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign1_RMI/ArithmeticServer.java" && echo [SUCCESS] ArithmeticServer.java
 
 echo.
 echo ----------------------------------------
@@ -146,14 +149,15 @@ curl -L -o "Assign4_Berkeley_Bully_ring\Berkeley\server.java" "https://raw.githu
 
 echo.
 echo ----------------------------------------
-echo Downloading Assignment 5 Files (1 file)...
+echo Downloading Assignment 5 Files (2 files)...
 echo ----------------------------------------
-curl -L -o "Assign5_WebService\server.js" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign5_WebService/server.js" && echo [SUCCESS] server.js
+curl -L -o "Assign5_WebService\Client.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign5_WebService/Client.java" && echo [SUCCESS] Client.java
+curl -L -o "Assign5_WebService\Server.java" "https://raw.githubusercontent.com/Kishor-04/LP1/main/DCS/Assign5_WebService/Server.java" && echo [SUCCESS] Server.java
 
 echo.
 echo ========================================
 echo All Files Downloaded Successfully!
-echo Total: 10 files downloaded
+echo Total: 11 files downloaded
 echo ========================================
 goto done
 
